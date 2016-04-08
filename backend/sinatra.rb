@@ -2,6 +2,8 @@
 
 require 'sinatra'
 
+set :bind, '0.0.0.0'
+
 get '/calendars' do
   File.read('calendars.json')
 end
