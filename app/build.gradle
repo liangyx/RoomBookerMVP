@@ -3,7 +3,7 @@ apply plugin: 'com.neenbedankt.android-apt'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.1"
+    buildToolsVersion "23.0.3"
 
     defaultConfig {
         applicationId "com.macoscpoe.roombooker"
@@ -13,7 +13,7 @@ android {
         versionName "1.0"
         //Using AVD localhost can be reached at 10.0.2.2 ip address (for Genymotion 10.0.3.2)
         //Sinatra framework launch service on 4567 port
-        buildConfigField 'String', 'apiEndpointUrl', '"http://10.0.2.2:4567/"'
+        buildConfigField 'String', 'apiEndpointUrl', '"http://172.29.6.240:4567/"'
 
     }
     buildTypes {
